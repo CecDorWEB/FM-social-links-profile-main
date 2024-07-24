@@ -1,0 +1,73 @@
+$dark_color_page: hsl(0, 0%, 8%);
+$dark_color_header: hsl(0, 0%, 12%);
+$dark_color_button: hsl(0, 0%, 20%);
+$medium_color_font: hsl(0, 0%, 70%);
+
+$primary_color: hsl(0, 0%, 100%);
+$secondary_color: hsl(75, 94%, 57%);
+$border_radius: 0.5em;
+$font_family: "Inter";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: $dark_color_page;
+  font-family: $font_family;
+  color: white;
+  header,
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    background-color: $dark_color_header;
+    padding: 1.5em;
+    gap: 1.25em;
+    h1 {
+      font-size: 1.375em;
+      font-weight: 700;
+    }
+    h2,
+    button {
+      font-size: 1em;
+      font-weight: 600;
+      color: $secondary_color;
+    }
+    h3 {
+      font-size: 0.875em;
+      font-weight: 400;
+      color: $medium_color_font;
+    }
+    nav {
+      gap: 1em;
+      a {
+        border: unset;
+        text-decoration: unset;
+        font-weight: 600;
+        color: $primary_color;
+        text-align: center;
+        border-radius: $border_radius;
+        padding: 0.8em;
+        width: clamp(280px, 27.23vw, 300px);
+        background-color: $dark_color_button;
+      }
+      a:hover {
+        background-color: $secondary_color;
+        color: $dark_color_page;
+      }
+    }
+  }
+}
