@@ -34,11 +34,16 @@ body {
   }
   header {
     background-color: $dark_color_header;
-    padding: 1.5em;
+    padding: 2em;
     gap: 1.25em;
+    border-radius: $border_radius;
+    .header_presentation {
+      text-align: center;
+    }
     h1 {
       font-size: 1.375em;
       font-weight: 700;
+      padding-bottom: 0.25em;
     }
     h2,
     button {

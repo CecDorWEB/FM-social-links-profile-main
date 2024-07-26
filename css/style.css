@@ -25,12 +25,17 @@ body nav {
 }
 body header {
   background-color: hsl(0, 0%, 12%);
-  padding: 1.5em;
+  padding: 2em;
   gap: 1.25em;
+  border-radius: 0.5em;
+}
+body header .header_presentation {
+  text-align: center;
 }
 body header h1 {
   font-size: 1.375em;
   font-weight: 700;
+  padding-bottom: 0.25em;
 }
 body header h2,
 body header button {
